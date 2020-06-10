@@ -1,5 +1,6 @@
+import axios from "axios";
+
 export const getData = (search) => dispatch => {
-    dispatch({ type: FETCH_DATA });
     setTimeout(() => {
       axios
         .get(`https://www.amiiboapi.com/api/amiibo?name=${search}`)
