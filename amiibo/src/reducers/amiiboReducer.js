@@ -1,12 +1,12 @@
 const initialState = {
-    message: "Search for an Amiibo..."
+    message: "CHOOSE YOUR FIGHTER",
 }
+
 
 export const amiiboReducer = (state = initialState, action) => {
     switch(action.type) {
         default: return state;
         case "NEW_SEARCH": 
-        console.log(state);
         return {
             ...state,
             message: "",
