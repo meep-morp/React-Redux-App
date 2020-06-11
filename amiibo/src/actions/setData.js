@@ -6,7 +6,7 @@ export const getData = (search) => dispatch => {
         .get(`https://www.amiiboapi.com/api/amiibo?name=${search}`)
         .then(res => {
           console.log(res);
-          dispatch({ type: "NEW_SEARCH", payload: res.data });
+          dispatch({ type: "NEW_SEARCH", payload: res.data.amiibo });
         })
         .catch(err => {
           console.error("error fetching data from api. err: ", err);
