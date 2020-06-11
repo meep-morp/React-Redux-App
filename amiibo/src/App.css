@@ -8,10 +8,6 @@ body {
   background-color: black;
 }
 
-.message {
-  height: 80vh
-}
-
 .App {
   background-image: url("../src/images/firebg.gif");
   background-repeat: no-repeat;
@@ -26,6 +22,8 @@ body {
   color: white;
   text-align: center;
   font-size: 2rem;
+  height: 97vh;
+  overflow: hidden;
 }
 
 .App::after {

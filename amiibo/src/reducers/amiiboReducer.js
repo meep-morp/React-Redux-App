@@ -1,6 +1,5 @@
 const initialState = {
     message: "CHOOSE YOUR FIGHTER",
-    data: []
 }
 
 
